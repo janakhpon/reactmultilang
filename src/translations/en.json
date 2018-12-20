@@ -1,0 +1,9 @@
+{
+    "home": {
+      "firstname": "First Name",
+      "lastname" : "Last Name",
+      "term" : "I agree the term and conditions described by this app",
+      "cancel" : "cancel",
+      "save" : "save"
+    }
+  }

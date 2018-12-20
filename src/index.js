@@ -1,12 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import DisplayContent from './components/DisplayContent';
+import { setDefaultTranslations, setDefaultLanguage } from 'react-multi-lang';
+import en from './translations/en.json';
+import mm from './translations/mm.json';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+setDefaultTranslations({en, mm});
+setDefaultLanguage('en');
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class App extends React.Component{
+
+    state = { firstname : "", lastname : ""}
+
+    renderContent(){
+        return(
+            <div className="ui container">
+            <DisplayContent/>
+            </div>
+        );
+
+    }
+
+    render(){
+        return this.renderContent();
+    }
+}
+
+ReactDOM.render(<App />, document.querySelector('#root'));
+
