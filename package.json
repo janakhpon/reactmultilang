@@ -1,9 +1,11 @@
 {
   "name": "multilang",
   "version": "0.1.0",
+  "homepage": "https://janakhpon.github.io/reactmultilang",
   "private": true,
   "dependencies": {
     "express-favicon": "^2.0.1",
+    "gh-pages": "^2.0.1",
     "path": "^0.12.7",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -13,6 +15,7 @@
     "xpress": "^2.4.6"
   },
   "scripts": {
+    "deploy":"yarn run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
