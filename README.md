@@ -1,4 +1,4 @@
-# Flashcrud
+# Multilang
   reactmultilang is a demo display for how to use localization in reactjs. Here is a github example [githubdeploy](https://janakhpon.github.io/reactmultilang/) and here is a demo for [herokudeploy](https://testmyownshitreact.herokuapp.com/)
 
 
